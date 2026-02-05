@@ -27,6 +27,9 @@ jobs:
       # 部署的是纯静态站点：直接把 web/ 目录作为站点根目录发布。
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+          # 自动开启 Pages（否则新仓库第一次跑会因“Pages 未启用”而失败）
+          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
