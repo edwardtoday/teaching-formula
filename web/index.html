@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>方程课件（目录）</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand__seal" aria-hidden="true">=</div>
+        <div class="brand__text">
+          <div class="brand__title">方程课件</div>
+          <div class="brand__sub">10 次 × 30 分钟｜一对一｜主线：正整数 + 0</div>
+        </div>
+      </div>
+
+      <nav class="topnav" aria-label="导航">
+        <a class="topnav__link" href="./all-in-one.html">全功能单页（备课）</a>
+      </nav>
+    </header>
+
+    <main class="shell">
+      <section class="hero" id="home">
+        <div class="hero__left">
+          <h1 class="hero__headline">
+            上课请直接打开
+            <span class="hero__accent">对应页面</span>
+          </h1>
+          <p class="hero__lead">
+            为了避免分心，课件拆成<strong>分页面</strong>：每次课只打开当前需要的互动器。
+          </p>
+
+          <div class="mantra">
+            <div class="mantra__label">核心口令</div>
+            <div class="mantra__text">两边做同一件事，等号才不变。</div>
+          </div>
+
+          <div class="cards">
+            <a class="card" href="./lessons/balance.html">
+              <div class="card__kicker">第 01–06 课</div>
+              <div class="card__title">天平解方程</div>
+              <div class="card__desc">把每一步写成“对两边同时做同样的事”。</div>
+              <div class="card__meta">x + a = b｜ax + b = c</div>
+            </a>
+            <a class="card" href="./lessons/systems.html">
+              <div class="card__kicker">第 07–08 课</div>
+              <div class="card__title">交点 = 解（GeoGebra）</div>
+              <div class="card__desc">数对 (x,y) → 线 → 交点 → 代回检验。</div>
+              <div class="card__meta">x + y = s｜x = t / y = t</div>
+            </a>
+            <a class="card" href="./lessons/square.html">
+              <div class="card__kicker">第 09 课</div>
+              <div class="card__title">平方 = 面积</div>
+              <div class="card__desc">用正方形面积理解 x²，练“找整数解 + 检验”。</div>
+              <div class="card__meta">x² = k（主线只写非负解）</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__right">
+          <div class="poster">
+            <div class="poster__badge">课堂提示</div>
+            <ul class="poster__list">
+              <li>每题都问：你对两边做了什么？为什么可以？</li>
+              <li>每节都做一次：代回检验 ✓</li>
+              <li>二元一次：先表格，后画点，再看交点</li>
+              <li>挑战题可跳过：负数只出现 3–4 题</li>
+            </ul>
+            <div class="poster__footer">
+              <span class="dot"></span>
+              <span>Chrome + 联网加载 GeoGebra</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="foot__inner">
+        <div class="foot__note">
+          建议上课节奏：热身 3min → 新概念 8min → 带做 12min → 独立 5min → 总结 2min
+        </div>
+        <div class="foot__sig">QFL · 方程 · v1</div>
+      </div>
+    </footer>
+
+    <!-- 目录页不加载互动器，避免分心与额外资源加载 -->
+  </body>
+</html>

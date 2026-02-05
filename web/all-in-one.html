@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>方程课件（10×30）</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand__seal" aria-hidden="true">=</div>
+        <div class="brand__text">
+          <div class="brand__title">方程课件</div>
+          <div class="brand__sub">10 次 × 30 分钟｜一对一｜主线：正整数 + 0</div>
+        </div>
+      </div>
+
+      <nav class="topnav" aria-label="导航">
+        <a class="topnav__link" href="#home">首页</a>
+        <a class="topnav__link" href="#balance">天平解方程</a>
+        <a class="topnav__link" href="#systems">交点 = 解</a>
+        <a class="topnav__link" href="#square">平方 = 面积</a>
+      </nav>
+    </header>
+
+    <main class="shell">
+      <section class="hero" id="home">
+        <div class="hero__left">
+          <h1 class="hero__headline">
+            把“会做题”变成
+            <span class="hero__accent">“懂原理”</span>
+          </h1>
+          <p class="hero__lead">
+            这套课只抓三件事：<strong>等号观</strong>、<strong>等式不变</strong>、<strong>代回检验</strong>。
+            你可以把下面的互动器当作“课堂的黑板”，每次上课按需要取用。
+          </p>
+
+          <div class="mantra">
+            <div class="mantra__label">核心口令</div>
+            <div class="mantra__text">两边做同一件事，等号才不变。</div>
+          </div>
+
+          <div class="cards">
+            <a class="card" href="#balance">
+              <div class="card__kicker">第 01–06 课</div>
+              <div class="card__title">天平解方程</div>
+              <div class="card__desc">把每一步写成“对两边同时做同样的事”。</div>
+              <div class="card__meta">x + a = b｜ax + b = c</div>
+            </a>
+            <a class="card" href="#systems">
+              <div class="card__kicker">第 07–08 课</div>
+              <div class="card__title">交点 = 解（GeoGebra）</div>
+              <div class="card__desc">数对 (x,y) → 线 → 交点 → 代回检验。</div>
+              <div class="card__meta">x + y = s｜x = t / y = t</div>
+            </a>
+            <a class="card" href="#square">
+              <div class="card__kicker">第 09 课</div>
+              <div class="card__title">平方 = 面积</div>
+              <div class="card__desc">用正方形面积理解 x²，练“找整数解 + 检验”。</div>
+              <div class="card__meta">x² = k（主线只写非负解）</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__right">
+          <div class="poster">
+            <div class="poster__badge">课堂提示</div>
+            <ul class="poster__list">
+              <li>每题都问：你对两边做了什么？为什么可以？</li>
+              <li>每节都做一次：代回检验 ✓</li>
+              <li>二元一次：先表格，后画点，再看交点</li>
+              <li>挑战题可跳过：负数只出现 3–4 题</li>
+            </ul>
+            <div class="poster__footer">
+              <span class="dot"></span>
+              <span>Chrome + 联网加载 GeoGebra</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="balance" aria-labelledby="balance-title">
+        <div class="panel__head">
+          <h2 class="panel__title" id="balance-title">天平解方程</h2>
+          <p class="panel__sub">
+            目标：把 <code>x</code> 单独留下来。每一步必须是“对两边同时做同样的事”，最后代回检验。
+          </p>
+        </div>
+        <div class="panel__body">
+          <div id="balance-root"></div>
+        </div>
+      </section>
+
+      <section class="panel" id="systems" aria-labelledby="systems-title">
+        <div class="panel__head">
+          <h2 class="panel__title" id="systems-title">交点 = 解（GeoGebra）</h2>
+          <p class="panel__sub">
+            一条线代表一个条件。交点的坐标是同时满足两个条件的那一对 <code>(x, y)</code>。
+          </p>
+        </div>
+        <div class="panel__body">
+          <div id="systems-root"></div>
+        </div>
+      </section>
+
+      <section class="panel" id="square" aria-labelledby="square-title">
+        <div class="panel__head">
+          <h2 class="panel__title" id="square-title">平方 = 面积</h2>
+          <p class="panel__sub">
+            用正方形面积理解 <code>x²</code>。主线只写非负解；拓展可提到 <code>(-x)²</code> 也等于 <code>x²</code>。
+          </p>
+        </div>
+        <div class="panel__body">
+          <div id="square-root"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="foot__inner">
+        <div class="foot__note">
+          建议上课节奏：热身 3min → 新概念 8min → 带做 12min → 独立 5min → 总结 2min
+        </div>
+        <div class="foot__sig">QFL · 方程 · v1</div>
+      </div>
+    </footer>
+
+    <script src="./widgets/balance-solver.js"></script>
+    <script src="./widgets/systems-geogebra.js"></script>
+    <script src="./widgets/area-square.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

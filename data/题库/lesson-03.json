@@ -1,0 +1,113 @@
+{
+  "lesson": 3,
+  "title": "一步方程（乘除）",
+  "number_system": "主线：正整数+0",
+  "sections": [
+    {
+      "name": "基础题",
+      "items": [
+        {
+          "id": "3-01",
+          "type": "solve",
+          "prompt": "解方程，并用“开锁检验”通关：4x = 20",
+          "answer": "x = 5",
+          "solution": ["两边同时 ÷4：x = 20 ÷ 4 = 5。", "开锁检验：4×5=20 ✓"],
+          "tags": ["linear", "check"]
+        },
+        {
+          "id": "3-02",
+          "type": "solve",
+          "prompt": "解方程，并用“开锁检验”通关：7x = 0",
+          "answer": "x = 0",
+          "solution": ["两边同时 ÷7：x = 0 ÷ 7 = 0。", "开锁检验：7×0=0 ✓"],
+          "tags": ["zero", "check"]
+        },
+        {
+          "id": "3-03",
+          "type": "solve",
+          "prompt": "解方程，并用“开锁检验”通关：6x = 18",
+          "answer": "x = 3",
+          "solution": ["两边同时 ÷6：x = 18 ÷ 6 = 3。", "开锁检验：6×3=18 ✓"],
+          "tags": ["linear", "check"]
+        },
+        {
+          "id": "3-04",
+          "type": "solve",
+          "prompt": "解方程，并用“开锁检验”通关：x ÷ 5 = 3（也可以写成 x/5 = 3）",
+          "answer": "x = 15",
+          "solution": ["两边同时 ×5：x = 3×5 = 15。", "开锁检验：15 ÷ 5 = 3 ✓"],
+          "tags": ["linear", "check"]
+        },
+        {
+          "id": "3-05",
+          "type": "solve",
+          "prompt": "解方程，并用“开锁检验”通关：x ÷ 4 = 0",
+          "answer": "x = 0",
+          "solution": ["两边同时 ×4：x = 0×4 = 0。", "开锁检验：0 ÷ 4 = 0 ✓"],
+          "tags": ["zero", "check"]
+        },
+        {
+          "id": "3-06",
+          "type": "solve",
+          "prompt": "解方程，并用“开锁检验”通关：3x = 12",
+          "answer": "x = 4",
+          "solution": ["两边同时 ÷3：x = 12 ÷ 3 = 4。", "开锁检验：3×4=12 ✓"],
+          "tags": ["linear", "check"]
+        },
+        {
+          "id": "3-07",
+          "type": "solve",
+          "prompt": "解方程，并用“开锁检验”通关：x ÷ 3 = 4（也可以写成 x/3 = 4）",
+          "answer": "x = 12",
+          "solution": ["两边同时 ×3：x = 4×3 = 12。", "开锁检验：12 ÷ 3 = 4 ✓"],
+          "tags": ["linear", "check"]
+        },
+        {
+          "id": "3-08",
+          "type": "solve",
+          "prompt": "解方程，并用“开锁检验”通关：9x = 45",
+          "answer": "x = 5",
+          "solution": ["两边同时 ÷9：x = 45 ÷ 9 = 5。", "开锁检验：9×5=45 ✓"],
+          "tags": ["linear", "check"]
+        }
+      ]
+    },
+    {
+      "name": "提升题",
+      "items": [
+        {
+          "id": "3-09",
+          "type": "reason",
+          "prompt": "有人解 5x = 20 时，两边都减 5 得到 0x = 15。你认为对吗？请写出正确步骤。",
+          "answer": "不对。要消掉“×5”，应该两边同时 ÷5。",
+          "solution": ["原式：5x = 20。", "两边同时 ÷5：x = 20 ÷ 5 = 4。", "开锁检验：5×4=20 ✓"],
+          "tags": ["reasoning", "equal"]
+        },
+        {
+          "id": "3-10",
+          "type": "word",
+          "prompt": "每盒彩笔 8 元，买了 x 盒，共 40 元。列方程并解。",
+          "answer": "x = 5",
+          "solution": ["列方程：8x = 40。", "两边同时 ÷8：x = 40 ÷ 8 = 5。", "开锁检验：8×5=40 ✓"],
+          "tags": ["modeling", "linear"]
+        },
+        {
+          "id": "3-11",
+          "type": "word",
+          "prompt": "把 x 颗糖平均分给 6 人，每人 4 颗。列方程并解。",
+          "answer": "x = 24",
+          "solution": ["列方程：x ÷ 6 = 4。", "两边同时 ×6：x = 4×6 = 24。", "开锁检验：24 ÷ 6 = 4 ✓"],
+          "tags": ["modeling", "division", "check"]
+        },
+        {
+          "id": "3-12",
+          "type": "fill_blank",
+          "prompt": "填空：如果 3x = 21，那么 x = □（写出检验；想想“平均分成 3 份”）",
+          "answer": "□ = 7",
+          "solution": ["两边同时 ÷3：x = 21 ÷ 3 = 7。", "开锁检验：3×7=21 ✓"],
+          "tags": ["check", "integer"]
+        }
+      ]
+    }
+  ]
+}

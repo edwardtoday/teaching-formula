@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>第07–08课｜交点 = 解（GeoGebra）</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand__seal" aria-hidden="true">⊙</div>
+        <div class="brand__text">
+          <div class="brand__title">第 07–08 课：交点 = 解（GeoGebra）</div>
+          <div class="brand__sub">只打开这一页｜避免分心｜需要联网加载 GeoGebra</div>
+        </div>
+      </div>
+      <nav class="topnav" aria-label="导航">
+        <a class="topnav__link" href="../index.html">返回目录</a>
+      </nav>
+    </header>
+
+    <main class="shell">
+      <section class="panel" aria-labelledby="systems-title">
+        <div class="panel__head">
+          <h2 class="panel__title" id="systems-title">一句话：交点的坐标就是方程组的解。</h2>
+          <p class="panel__sub">
+            课堂追问模板：<strong>“交点代表什么？”</strong> → <strong>“代回两条方程都成立吗？”</strong>（原点 O 会被标出来，别让它“躲角落”。）
+          </p>
+        </div>
+        <div class="panel__body">
+          <div id="systems-root"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="foot__inner">
+        <div class="foot__note">建议顺序：表格列举 → 画点 → 连线 → 交点 → 代回检验</div>
+        <div class="foot__sig">QFL · 方程 · Focus</div>
+      </div>
+    </footer>
+
+    <script src="../widgets/systems-geogebra.js"></script>
+    <script>
+      (function () {
+        const root = document.getElementById("systems-root");
+        window.SystemsGeoGebra?.mount?.(root);
+      })();
+    </script>
+  </body>
+</html>

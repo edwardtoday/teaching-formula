@@ -1,0 +1,158 @@
+{
+  "lesson": 9,
+  "title": "一元二次直觉（平方 = 面积）+ 少量分数拓展",
+  "number_system": "主线：正整数+0（分数拓展：1/2、1/4；含可选负数说明）",
+  "sections": [
+    {
+      "name": "基础题（平方表）",
+      "items": [
+        {
+          "id": "9-01",
+          "type": "solve",
+          "prompt": "解，并用“开锁检验”通关：x² = 0（本课主线只写非负解）",
+          "answer": "x = 0",
+          "solution": ["0² = 0 ✓"],
+          "tags": ["quadratic", "zero", "check"]
+        },
+        {
+          "id": "9-02",
+          "type": "solve",
+          "prompt": "解，并用“开锁检验”通关：x² = 1（本课主线只写非负解）",
+          "answer": "x = 1",
+          "solution": ["1² = 1 ✓"],
+          "tags": ["quadratic", "check"]
+        },
+        {
+          "id": "9-03",
+          "type": "solve",
+          "prompt": "解，并用“开锁检验”通关：x² = 4（本课主线只写非负解）",
+          "answer": "x = 2",
+          "solution": ["2² = 4 ✓"],
+          "tags": ["quadratic", "check"]
+        },
+        {
+          "id": "9-04",
+          "type": "solve",
+          "prompt": "解，并用“开锁检验”通关：x² = 9（本课主线只写非负解）",
+          "answer": "x = 3",
+          "solution": ["3² = 9 ✓"],
+          "tags": ["quadratic", "check"]
+        },
+        {
+          "id": "9-05",
+          "type": "solve",
+          "prompt": "解，并用“开锁检验”通关：x² = 16（本课主线只写非负解）",
+          "answer": "x = 4",
+          "solution": ["4² = 16 ✓"],
+          "tags": ["quadratic", "check"]
+        },
+        {
+          "id": "9-06",
+          "type": "solve",
+          "prompt": "解，并用“开锁检验”通关：x² = 25（本课主线只写非负解）",
+          "answer": "x = 5",
+          "solution": ["5² = 25 ✓"],
+          "tags": ["quadratic", "check"]
+        },
+        {
+          "id": "9-07",
+          "type": "judge",
+          "prompt": "x² = 20 有整数解吗？（只回答“有/没有”，并说明理由）",
+          "answer": "没有整数解",
+          "solution": ["因为 4²=16，5²=25，20 夹在 16 和 25 之间，所以没有整数 x 使 x²=20。"],
+          "tags": ["quadratic", "reasoning"]
+        },
+        {
+          "id": "9-08",
+          "type": "choose",
+          "prompt": "下面哪个数满足 x² = 36？A. 4  B. 5  C. 6（写检验）",
+          "answer": "C. 6",
+          "solution": ["开锁检验：6²=36 ✓；4²=16 ✗；5²=25 ✗"],
+          "tags": ["quadratic", "check", "multiple_choice"]
+        }
+      ]
+    },
+    {
+      "name": "提升题（意义与检验）",
+      "items": [
+        {
+          "id": "9-09",
+          "type": "meaning",
+          "prompt": "用一句话解释：x² 表示什么？（提示：可以想象“铺地砖拼正方形”的面积）",
+          "answer": "表示边长为 x 的正方形面积（x×x）。",
+          "solution": ["平方可以用“面积”来理解。"],
+          "tags": ["concept"]
+        },
+        {
+          "id": "9-10",
+          "type": "reason",
+          "prompt": "有人说：x² = 9 的解是 x = 3。你同意吗？你能想到还有没有别的数平方也等于 9？（本题可拓展）",
+          "answer": "主线：x=3；拓展：x=-3 也可以。",
+          "solution": ["3²=9。", "拓展：(-3)² 也等于 9。"],
+          "tags": ["quadratic", "negative_notice"]
+        },
+        {
+          "id": "9-11",
+          "type": "solve",
+          "prompt": "解，并用“开锁检验”通关：x² = 49（主线只写非负解）",
+          "answer": "x = 7",
+          "solution": ["7²=49 ✓"],
+          "tags": ["quadratic", "check"]
+        },
+        {
+          "id": "9-12",
+          "type": "solve",
+          "prompt": "解，并用“开锁检验”通关：x² = 64（主线只写非负解）",
+          "answer": "x = 8",
+          "solution": ["8²=64 ✓"],
+          "tags": ["quadratic", "check"]
+        },
+        {
+          "id": "9-13",
+          "type": "solve",
+          "prompt": "解，并用“开锁检验”通关：x² + 7 = 16（提示：先把 x² 单独留下来）",
+          "answer": "x = 3",
+          "solution": [
+            "两边同时减 7：x² = 9。",
+            "主线取非负解：x = 3。",
+            "开锁检验：3² + 7 = 9 + 7 = 16 ✓"
+          ],
+          "tags": ["quadratic", "equal", "check"]
+        },
+        {
+          "id": "9-14",
+          "type": "solve",
+          "prompt": "解，并用“开锁检验”通关：x² - 4 = 5（提示：先把 x² 单独留下来）",
+          "answer": "x = 3",
+          "solution": [
+            "两边同时加 4：x² = 9。",
+            "主线取非负解：x = 3。",
+            "开锁检验：3² - 4 = 9 - 4 = 5 ✓"
+          ],
+          "tags": ["quadratic", "equal", "check"]
+        }
+      ]
+    },
+    {
+      "name": "分数拓展（少量 1/2、1/4）",
+      "items": [
+        {
+          "id": "9-F1",
+          "type": "word",
+          "prompt": "一个数的一半是 8。设这个数为 x，列方程并解（最后开锁检验）。",
+          "answer": "x = 16",
+          "solution": ["列方程：x ÷ 2 = 8。", "两边同时 ×2：x = 16。", "开锁检验：16÷2=8 ✓"],
+          "tags": ["fractions", "modeling", "check"]
+        },
+        {
+          "id": "9-F2",
+          "type": "word",
+          "prompt": "一个数的四分之一是 5。设这个数为 x，列方程并解（最后开锁检验）。",
+          "answer": "x = 20",
+          "solution": ["“四分之一”表示 ÷4。列方程：x ÷ 4 = 5。", "两边同时 ×4：x = 20。", "开锁检验：20÷4=5 ✓"],
+          "tags": ["fractions", "modeling", "check"]
+        }
+      ]
+    }
+  ]
+}

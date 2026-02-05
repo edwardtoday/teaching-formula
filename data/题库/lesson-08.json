@@ -1,0 +1,134 @@
+{
+  "lesson": 8,
+  "title": "二元一次方程组（交点 = 解）",
+  "number_system": "主线：正整数+0（含可选挑战）",
+  "sections": [
+    {
+      "name": "基础题",
+      "items": [
+        {
+          "id": "8-01",
+          "type": "system",
+          "prompt": "解方程组并检验：\nA: x + y = 6\nB: x = 2",
+          "answer": "(x, y) = (2, 4)",
+          "solution": ["由 B 得 x=2。", "代入 A：2 + y = 6，y=4。", "开锁检验：两条都成立 ✓"],
+          "tags": ["system", "check"]
+        },
+        {
+          "id": "8-02",
+          "type": "system",
+          "prompt": "解方程组并检验：\nA: x + y = 9\nB: y = 1",
+          "answer": "(x, y) = (8, 1)",
+          "solution": ["由 B 得 y=1。", "代入 A：x + 1 = 9，x=8。", "开锁检验：两条都成立 ✓"],
+          "tags": ["system", "check"]
+        },
+        {
+          "id": "8-03",
+          "type": "system",
+          "prompt": "解方程组并检验：\nA: x + y = 10\nB: x = y",
+          "answer": "(x, y) = (5, 5)",
+          "solution": ["由 B 知道 x 和 y 相等。", "两数相等且和为 10，所以都是 5。", "开锁检验：5+5=10 且 5=5 ✓"],
+          "tags": ["system", "reasoning"]
+        },
+        {
+          "id": "8-04",
+          "type": "system",
+          "prompt": "解方程组并检验：\nA: x + y = 8\nB: x = 6",
+          "answer": "(x, y) = (6, 2)",
+          "solution": ["由 B 得 x=6。", "代入 A：6 + y = 8，y=2。", "开锁检验：两条都成立 ✓"],
+          "tags": ["system", "check"]
+        },
+        {
+          "id": "8-05",
+          "type": "graph_meaning",
+          "prompt": "用一句话解释：为什么“交点”就是方程组的解？",
+          "answer": "交点同时在两条线上，所以它的坐标同时满足两条方程。",
+          "solution": ["一条线表示一个条件；交点同时满足两个条件。"],
+          "tags": ["concept", "graph"]
+        },
+        {
+          "id": "8-06",
+          "type": "check_pair",
+          "prompt": "【通关测试】数字侦探：(3, 5) 这对“钥匙”，能同时打开 x + y = 8 和 x = 3 这两扇门吗？（代入试一试）",
+          "answer": "是",
+          "solution": ["代入：3+5=8 ✓，且 x=3 ✓，所以同时满足。"],
+          "tags": ["check"]
+        },
+        {
+          "id": "8-07",
+          "type": "check_pair",
+          "prompt": "【通关测试】数字侦探：(4, 4) 这对“钥匙”，能同时打开 x + y = 8 和 x = 3 这两扇门吗？（代入试一试）",
+          "answer": "不是",
+          "solution": ["代入：4+4=8 ✓，但 x=4 ≠ 3 ✗，所以不同时满足。"],
+          "tags": ["check"]
+        },
+        {
+          "id": "8-08",
+          "type": "system",
+          "prompt": "解方程组并检验：\nA: x + y = 7\nB: y = 4",
+          "answer": "(x, y) = (3, 4)",
+          "solution": ["由 B 得 y=4。", "代入 A：x + 4 = 7，x=3。", "开锁检验：两条都成立 ✓"],
+          "tags": ["system", "check"]
+        }
+      ]
+    },
+    {
+      "name": "提升题",
+      "items": [
+        {
+          "id": "8-09",
+          "type": "no_solution",
+          "prompt": "方程组：x + y = 6 和 x + y = 8 有共同解吗？为什么？",
+          "answer": "没有共同解",
+          "solution": ["同一个 (x,y) 不可能同时满足“和等于 6”和“和等于 8”。", "图像上是两条平行线，不相交。"],
+          "tags": ["system", "graph", "reasoning"]
+        },
+        {
+          "id": "8-10",
+          "type": "system",
+          "prompt": "解方程组并检验：\nA: x + y = 12\nB: x = 9",
+          "answer": "(x, y) = (9, 3)",
+          "solution": ["由 B 得 x=9。", "代入 A：9 + y = 12，y=3。", "开锁检验：两条都成立 ✓"],
+          "tags": ["system", "check"]
+        },
+        {
+          "id": "8-11",
+          "type": "system",
+          "prompt": "解方程组并检验：\nA: x + y = 5\nB: y = 0",
+          "answer": "(x, y) = (5, 0)",
+          "solution": ["由 B 得 y=0。", "代入 A：x + 0 = 5，x=5。", "开锁检验：两条都成立 ✓"],
+          "tags": ["system", "zero", "check"]
+        },
+        {
+          "id": "8-12",
+          "type": "graph_task",
+          "prompt": "在 GeoGebra 里输入两条直线：x + y = 6 和 x = 2，读出交点坐标，并写出检验。",
+          "answer": "交点 (2, 4)",
+          "solution": ["读到 (2,4)。", "检验：2+4=6 ✓，且 x=2 ✓。"],
+          "tags": ["geogebra", "check"]
+        },
+        {
+          "id": "8-13",
+          "type": "reason",
+          "prompt": "【找茬】解方程组：\nA: x + y = 6\nB: x = 2\n有人说：x=2，所以 y=2。你觉得对吗？请写出正确的 (x, y) 并开锁检验。",
+          "answer": "(x, y) = (2, 4)",
+          "solution": ["由 B 得 x=2。", "代入 A：2+y=6，所以 y=4。", "开锁检验：2+4=6 ✓，且 x=2 ✓。"],
+          "tags": ["reasoning", "system", "check"]
+        }
+      ]
+    },
+    {
+      "name": "挑战题（可跳过）",
+      "items": [
+        {
+          "id": "8-C1",
+          "type": "system",
+          "prompt": "【挑战】方程组：x + y = 6 和 x + y = 6 的解有多少组？（提示：这是同一个条件）",
+          "answer": "有很多组（无数多组）",
+          "solution": ["两条方程其实一样，满足 x+y=6 的所有点都同时满足两条。", "例如 (0,6),(1,5),(2,4)..."],
+          "tags": ["challenge", "infinite_solutions"]
+        }
+      ]
+    }
+  ]
+}

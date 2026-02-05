@@ -1,0 +1,121 @@
+{
+  "lesson": 7,
+  "title": "二元一次（数对、表格、点）",
+  "number_system": "主线：正整数+0",
+  "sections": [
+    {
+      "name": "基础题",
+      "items": [
+        {
+          "id": "7-01",
+          "type": "table",
+          "prompt": "完成表格：满足 x + y = 6。\n\nx: 0  1  2  3  4  5  6\n\ny: □  □  □  □  □  □  □",
+          "answer": "y: 6  5  4  3  2  1  0",
+          "solution": ["因为 y = 6 - x，所以依次得到 6,5,4,3,2,1,0。"],
+          "tags": ["pairs", "table"]
+        },
+        {
+          "id": "7-02",
+          "type": "fill_blank",
+          "prompt": "如果 (x, y) 满足 x + y = 8，已知 x = 3，那么 y = □。",
+          "answer": "□ = 5",
+          "solution": ["代入：3 + y = 8，两边同时减 3：y = 5。"],
+          "tags": ["pairs", "substitute"]
+        },
+        {
+          "id": "7-03",
+          "type": "fill_blank",
+          "prompt": "如果 (x, y) 满足 x + y = 10，已知 y = 4，那么 x = □。",
+          "answer": "□ = 6",
+          "solution": ["代入：x + 4 = 10，两边同时减 4：x = 6。"],
+          "tags": ["pairs", "substitute"]
+        },
+        {
+          "id": "7-04",
+          "type": "check_pair",
+          "prompt": "【通关测试】判断 (2, 4) 是否是方程 x + y = 6 的解？（写出代入检验）",
+          "answer": "是",
+          "solution": ["代入：2 + 4 = 6 ✓，所以 (2,4) 是解。"],
+          "tags": ["check"]
+        },
+        {
+          "id": "7-05",
+          "type": "check_pair",
+          "prompt": "【通关测试】判断 (2, 5) 是否是方程 x + y = 6 的解？（写出代入检验）",
+          "answer": "不是",
+          "solution": ["代入：2 + 5 = 7 ≠ 6 ✗，所以 (2,5) 不是解。"],
+          "tags": ["check"]
+        },
+        {
+          "id": "7-06",
+          "type": "list_pairs",
+          "prompt": "列举 5 组满足 x + y = 9 的整数解（x、y 只用 0 到 9）。",
+          "answer": "例如：(0,9),(1,8),(2,7),(3,6),(4,5)",
+          "solution": ["只要 x 和 y 加起来等于 9 就可以。"],
+          "tags": ["pairs", "list"]
+        },
+        {
+          "id": "7-07",
+          "type": "plot",
+          "prompt": "在坐标系中标出 3 个点：A(0,6)、B(2,4)、C(5,1)，并说出它们有什么共同点。\n提示：只画第一象限；不要求画得很准，刻度对就行。",
+          "answer": "它们都在 x + y = 6 这条线上（都满足 x+y=6）。",
+          "solution": ["代入检验：0+6=6，2+4=6，5+1=6。"],
+          "tags": ["graph", "meaning"]
+        },
+        {
+          "id": "7-08",
+          "type": "meaning",
+          "prompt": "用一句话解释：二元一次方程 x + y = 6 表示什么？",
+          "answer": "表示所有满足“x 和 y 加起来等于 6”的数对 (x, y)。",
+          "solution": ["方程的解不是一个数，而是一堆配对 (x,y)。"],
+          "tags": ["concept"]
+        }
+      ]
+    },
+    {
+      "name": "提升题",
+      "items": [
+        {
+          "id": "7-09",
+          "type": "table",
+          "prompt": "完成表格：满足 x + y = 12。\n\nx: 0  2  4  6  8  10  12\n\ny: □  □  □  □  □  □  □",
+          "answer": "y: 12  10  8  6  4  2  0",
+          "solution": ["因为 y = 12 - x，依次计算即可。"],
+          "tags": ["table"]
+        },
+        {
+          "id": "7-10",
+          "type": "compare",
+          "prompt": "在 x + y = 10 中，如果 x 变大 1，那么 y 会怎样变化？（写一句话）",
+          "answer": "y 会变小 1",
+          "solution": ["因为 x+y 要一直等于 10，所以 x 增加 1，y 就要减少 1 才能保持和不变。"],
+          "tags": ["reasoning"]
+        },
+        {
+          "id": "7-11",
+          "type": "create",
+          "prompt": "自己选一个和：比如 7 或 11，写出一个方程 x + y = （你选的数），再列举 4 组解。",
+          "answer": "示例：x + y = 7；解：(0,7),(1,6),(2,5),(3,4)",
+          "solution": ["只要加起来等于你选的数即可。"],
+          "tags": ["creative"]
+        },
+        {
+          "id": "7-12",
+          "type": "check_pair",
+          "prompt": "【通关测试】判断 (6, 0) 是否是方程 x + y = 6 的解？（写出代入检验）",
+          "answer": "是",
+          "solution": ["代入：6 + 0 = 6 ✓。"],
+          "tags": ["zero", "check"]
+        },
+        {
+          "id": "7-13",
+          "type": "reason",
+          "prompt": "【找茬】有人完成 x + y = 6 的表格时，写成 y = 6 + x，所以 x=2 时 y=8。\n你觉得对吗？请改正，并用代回检验说明。",
+          "answer": "不对。应该是 y = 6 - x，所以 x=2 时 y=4。",
+          "solution": ["由 x+y=6，得到 y=6-x（把 x 移走，其实就是两边同时减 x）。", "当 x=2 时，y=4。", "通关检验：2+4=6 ✓"],
+          "tags": ["reasoning", "substitute", "check"]
+        }
+      ]
+    }
+  ]
+}

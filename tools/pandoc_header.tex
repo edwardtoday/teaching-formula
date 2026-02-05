@@ -1,0 +1,10 @@
+% Auto-injected header for pandoc -> xelatex
+% - Ensure checkmark/crossmark render reliably even if main font lacks the glyph.
+
+\usepackage{pifont}
+\usepackage{newunicodechar}
+
+% ✓ / ✗ (used across docs and answer keys)
+\newunicodechar{✓}{\ding{51}}
+\newunicodechar{✗}{\ding{55}}
+

@@ -1,0 +1,143 @@
+{
+  "lesson": 1,
+  "title": "等号与未知数",
+  "number_system": "主线：正整数+0",
+  "sections": [
+    {
+      "name": "基础题",
+      "items": [
+        {
+          "id": "1-01",
+          "type": "fill_blank",
+          "prompt": "填空：3 + □ = 7（遮挡法：想象 □ 被手盖住了）",
+          "answer": "□ = 4",
+          "solution": ["因为 4 + 3 = 7，所以 □ = 4。"],
+          "tags": ["equal", "integer"]
+        },
+        {
+          "id": "1-02",
+          "type": "fill_blank",
+          "prompt": "填空：□ + 5 = 5（遮挡法：想象 □ 被手盖住了）",
+          "answer": "□ = 0",
+          "solution": ["因为 0 + 5 = 5，所以 □ = 0。"],
+          "tags": ["equal", "zero"]
+        },
+        {
+          "id": "1-03",
+          "type": "fill_blank",
+          "prompt": "填空：9 = □ + 2（遮挡法：想象 □ 被手盖住了）",
+          "answer": "□ = 7",
+          "solution": ["因为 7 + 2 = 9，所以 □ = 7。"],
+          "tags": ["equal", "integer"]
+        },
+        {
+          "id": "1-04",
+          "type": "solve",
+          "prompt": "解方程，并用“开锁检验”通关：x + 2 = 9",
+          "answer": "x = 7",
+          "solution": [
+            "两边同时减 2：x = 9 - 2 = 7。",
+            "开锁检验：7 + 2 = 9 ✓"
+          ],
+          "tags": ["linear", "check"]
+        },
+        {
+          "id": "1-05",
+          "type": "solve",
+          "prompt": "解方程，并用“开锁检验”通关：x - 4 = 6",
+          "answer": "x = 10",
+          "solution": [
+            "两边同时加 4：x = 6 + 4 = 10。",
+            "开锁检验：10 - 4 = 6 ✓"
+          ],
+          "tags": ["linear", "check"]
+        },
+        {
+          "id": "1-06",
+          "type": "solve",
+          "prompt": "解方程，并用“开锁检验”通关：7 = x + 5",
+          "answer": "x = 2",
+          "solution": [
+            "两边同时减 5：7 - 5 = x，所以 x = 2。",
+            "开锁检验：2 + 5 = 7 ✓"
+          ],
+          "tags": ["linear", "check"]
+        },
+        {
+          "id": "1-07",
+          "type": "solve",
+          "prompt": "解方程，并用“开锁检验”通关：x + 6 = 10",
+          "answer": "x = 4",
+          "solution": [
+            "两边同时减 6：x = 10 - 6 = 4。",
+            "开锁检验：4 + 6 = 10 ✓"
+          ],
+          "tags": ["linear", "check"]
+        },
+        {
+          "id": "1-08",
+          "type": "solve",
+          "prompt": "解方程，并用“开锁检验”通关：x - 2 = 0",
+          "answer": "x = 2",
+          "solution": [
+            "两边同时加 2：x = 0 + 2 = 2。",
+            "开锁检验：2 - 2 = 0 ✓"
+          ],
+          "tags": ["linear", "check", "zero"]
+        }
+      ]
+    },
+    {
+      "name": "提升题",
+      "items": [
+        {
+          "id": "1-09",
+          "type": "reason",
+          "prompt": "小明写：x + 3 = 7，所以 x = 7 - 3。你觉得这样写可以吗？请把过程写成“对两边做同一件事”的形式。",
+          "answer": "写法容易把“等号”当成箭头。建议写成：两边同时减 3。",
+          "solution": [
+            "正确写法：x + 3 = 7。",
+            "两边同时减 3：x + 3 - 3 = 7 - 3。",
+            "得到 x = 4，并开锁检验。"
+          ],
+          "tags": ["equal", "reasoning"]
+        },
+        {
+          "id": "1-10",
+          "type": "choose",
+          "prompt": "下面哪个是方程 x + 5 = 12 的解？A. 5  B. 7  C. 12（写出检验）",
+          "answer": "B. 7",
+          "solution": [
+            "代回检验：7 + 5 = 12 ✓",
+            "5 + 5 = 10 ✗，12 + 5 = 17 ✗"
+          ],
+          "tags": ["check", "multiple_choice"]
+        },
+        {
+          "id": "1-11",
+          "type": "word",
+          "prompt": "“一个数加 8 等于 15。”设这个数为 x，列方程并解。",
+          "answer": "x = 7",
+          "solution": [
+            "列方程：x + 8 = 15。",
+            "两边同时减 8：x = 15 - 8 = 7。",
+            "检验：7 + 8 = 15 ✓"
+          ],
+          "tags": ["modeling", "linear"]
+        },
+        {
+          "id": "1-12",
+          "type": "word",
+          "prompt": "“一个数减 3 等于 4。”设这个数为 x，列方程并解。",
+          "answer": "x = 7",
+          "solution": [
+            "列方程：x - 3 = 4。",
+            "两边同时加 3：x = 4 + 3 = 7。",
+            "检验：7 - 3 = 4 ✓"
+          ],
+          "tags": ["modeling", "linear"]
+        }
+      ]
+    }
+  ]
+}
