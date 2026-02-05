@@ -214,6 +214,11 @@
       right: null, // for bothSides: {a,b}
       history: [],
       msg: "",
+      ui: {
+        // 记录“操作下拉框/输入框”的选择，避免每次 render() 都重置为默认值
+        op: null,
+        kText: "1",
+      },
     };
 
     function loadPuzzle(idx) {
@@ -233,6 +238,10 @@
         state.mode === "bothSides"
           ? "目标：先把袋子（x）集中到一边，再把 x 单独留下来；最后代回检验。"
           : "目标：把 x 单独留下来，然后代回检验。";
+
+      // 换题/重置时，操作栏回到默认（但应用步骤/撤销/提示不应重置）
+      state.ui.op = null;
+      state.ui.kText = "1";
       render();
     }
 
@@ -447,13 +456,22 @@
               : `两边同时 ${op}`;
         opSel.appendChild(makeEl("option", { value: op, html: label }));
       }
+      // 恢复上一次选择；若当前模式不支持该操作，则回退到第一个可用操作
+      if (!state.ui.op || !ops.includes(state.ui.op)) state.ui.op = ops[0];
+      opSel.value = state.ui.op;
+      opSel.addEventListener("change", () => {
+        state.ui.op = opSel.value;
+      });
 
       const valInput = makeEl("input", {
         class: "bs__input",
         inputmode: "numeric",
-        value: "1",
+        value: state.ui.kText ?? "1",
         placeholder: "数字/袋子数",
         "aria-label": "操作数",
+      });
+      valInput.addEventListener("input", () => {
+        state.ui.kText = valInput.value;
       });
 
       const applyBtn = makeEl("button", {
@@ -461,7 +479,12 @@
         html: "应用这一步",
         onclick: () => {
           const op = opSel.value;
-          const k = Number(valInput.value);
+          const kText = valInput.value;
+          // 先落盘 UI 状态：即使本次输入不合法，render 后也保持用户刚刚的选择/输入
+          state.ui.op = op;
+          state.ui.kText = kText;
+
+          const k = Number(kText);
           if (!Number.isFinite(k)) {
             state.msg = "请输入数字。";
             render();
